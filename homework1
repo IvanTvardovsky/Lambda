@@ -1,0 +1,40 @@
+# 1
+def func(a1, a2, a3):
+    return min(a1, a2, a3)
+
+
+a1 = int(input())
+a2 = int(input())
+a3 = int(input())
+print(func(a1, a2, a3))
+
+# 2
+def func(a1, a2, a3):
+    if a1 == a2 and a1 == a3:
+        return 3
+    if a1 == a2 or a2 == a3 or a1 == a3:
+        return 2
+    else:
+        return 0
+
+
+a1 = int(input())
+a2 = int(input())
+a3 = int(input())
+print(func(a1, a2, a3))
+
+# 3
+a = []
+s = 0
+for i in range(10):
+    a.append(int(input()))
+for i in range(len(a)):
+    s += a[i]
+print(s)
+
+# 4
+a = []
+number = int(input())
+for i in range(number):
+    a.append(int(input()))
+print(a.count(0))
